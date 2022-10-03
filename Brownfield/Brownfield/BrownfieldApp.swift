@@ -11,7 +11,7 @@ import SwiftUI
 struct BrownfieldApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            BreedListScreen()
         }
     }
 }
