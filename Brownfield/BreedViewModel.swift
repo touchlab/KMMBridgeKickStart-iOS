@@ -6,46 +6,61 @@
 //
 
 import Foundation
+import Combine
+import BrownfieldSDK
 
 extension BreedListScreen {
     
     @MainActor
     class BreedViewModel : ObservableObject {
         
-        @Published
-        var breeds: [Breed] = [
-            Breed(id: 0, name: "Cute dog", favorite: true),
-            Breed(id: 1, name: "Little dog", favorite: false),
-            Breed(id: 2, name: "Small dog", favorite: false),
-            Breed(id: 3, name: "Big dog", favorite: false),
-            Breed(id: 4, name: "Epic dog", favorite: true)
-        ]
+        private let repository: BreedRepository = KotlinDependencies.shared.getBreedRepository()
         
         @Published
-        var loading: Bool = false
+        var loading = false
         
         @Published
-        var error: String? = nil
+        var breeds: [Breed]?
+        
+        @Published
+        var error: String?
+        
+        private var cancellables = [AnyCancellable]()
+        
+        init() {
+            observeBreeds()
+        }
+        
+        private func observeBreeds() {
+            repository.getBreeds().collect(collector: Collector<NSArray?>(callback: { breeds in
+                DispatchQueue.main.async {
+                    self.breeds = breeds as? [Breed]
+                }
+            }), completionHandler: { error in
+                self.handleError(error: error)
+            })
+        }
+        
+        func onBreedFavorite(_ breed: Breed) {
+            repository.updateBreedFavorite(breed: breed, completionHandler: { error in
+                self.handleError(error: error)
+            })
+        }
         
         func refresh() {
-            breeds = breeds
+            loading = true
+            repository.refreshBreeds(completionHandler: { error in
+                self.handleError(error: error)
+            })
         }
         
-        func onBreedFavorite(breed: Breed) {
-            // TODO
+        private func handleError(error: Error?) {
+            DispatchQueue.main.async {
+                self.loading = false
+                if error != nil {
+                    self.error = "Unable to refresh breed list"
+                }
+            }
         }
-    }
-}
-
-class Breed {
-    
-    let id: Int
-    let name: String
-    let favorite: Bool
-    
-    init(id: Int, name: String, favorite: Bool) {
-        self.id = id
-        self.name = name
-        self.favorite = favorite
     }
 }

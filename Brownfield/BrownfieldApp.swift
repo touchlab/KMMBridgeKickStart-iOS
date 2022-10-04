@@ -9,6 +9,11 @@ import SwiftUI
 
 @main
 struct BrownfieldApp: App {
+    
+    init() {
+        startKoin()
+    }
+    
     var body: some Scene {
         WindowGroup {
             BreedListScreen()

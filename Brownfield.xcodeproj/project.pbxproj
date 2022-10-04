@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A303298728F44418002FE8CF /* Collector.swift in Sources */ = {isa = PBXBuildFile; fileRef = A303298628F44418002FE8CF /* Collector.swift */; };
 		A34C871028EACFCB00AAEA71 /* BreedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34C870F28EACFCB00AAEA71 /* BreedViewModel.swift */; };
 		A361324828E70DD800711398 /* BrownfieldApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A361324728E70DD800711398 /* BrownfieldApp.swift */; };
 		A361324A28E70DD800711398 /* BreedListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A361324928E70DD800711398 /* BreedListScreen.swift */; };
@@ -15,6 +16,7 @@
 		A361325A28E70DD900711398 /* BrownfieldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A361325928E70DD900711398 /* BrownfieldTests.swift */; };
 		A361326428E70DD900711398 /* BrownfieldUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A361326328E70DD900711398 /* BrownfieldUITests.swift */; };
 		A361326628E70DD900711398 /* BrownfieldUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A361326528E70DD900711398 /* BrownfieldUITestsLaunchTests.swift */; };
+		A3E19BF228F432EF00EC73CF /* Koin.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E19BF128F432EF00EC73CF /* Koin.swift */; };
 		ED117D43FC90A62A9A445197 /* Pods_Brownfield.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A1D4C206999EBD73D9A736F /* Pods_Brownfield.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +41,7 @@
 		1A1D4C206999EBD73D9A736F /* Pods_Brownfield.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Brownfield.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F4999F15EF1AD2746DFE08A /* Pods-Brownfield.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brownfield.debug.xcconfig"; path = "Target Support Files/Pods-Brownfield/Pods-Brownfield.debug.xcconfig"; sourceTree = "<group>"; };
 		9616F57AB3AF5EAA1F67D59D /* Pods-Brownfield.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brownfield.release.xcconfig"; path = "Target Support Files/Pods-Brownfield/Pods-Brownfield.release.xcconfig"; sourceTree = "<group>"; };
+		A303298628F44418002FE8CF /* Collector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collector.swift; sourceTree = "<group>"; };
 		A34C870F28EACFCB00AAEA71 /* BreedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedViewModel.swift; sourceTree = "<group>"; };
 		A361324428E70DD800711398 /* Brownfield.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Brownfield.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A361324728E70DD800711398 /* BrownfieldApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrownfieldApp.swift; sourceTree = "<group>"; };
@@ -51,6 +54,7 @@
 		A361325F28E70DD900711398 /* BrownfieldUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrownfieldUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A361326328E70DD900711398 /* BrownfieldUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrownfieldUITests.swift; sourceTree = "<group>"; };
 		A361326528E70DD900711398 /* BrownfieldUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrownfieldUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A3E19BF128F432EF00EC73CF /* Koin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Koin.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +89,6 @@
 				8F4999F15EF1AD2746DFE08A /* Pods-Brownfield.debug.xcconfig */,
 				9616F57AB3AF5EAA1F67D59D /* Pods-Brownfield.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -120,6 +123,8 @@
 				A361324D28E70DD900711398 /* Brownfield.entitlements */,
 				A361324E28E70DD900711398 /* Preview Content */,
 				A34C870F28EACFCB00AAEA71 /* BreedViewModel.swift */,
+				A3E19BF128F432EF00EC73CF /* Koin.swift */,
+				A303298628F44418002FE8CF /* Collector.swift */,
 			);
 			path = Brownfield;
 			sourceTree = "<group>";
@@ -168,7 +173,7 @@
 				A361324028E70DD800711398 /* Sources */,
 				A361324128E70DD800711398 /* Frameworks */,
 				A361324228E70DD800711398 /* Resources */,
-				08AC37BFDBE70C56CE6CEF51 /* [CP] Embed Pods Frameworks */,
+				7C6AC5E5DA9D6F95BAA8ABB4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -307,7 +312,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		08AC37BFDBE70C56CE6CEF51 /* [CP] Embed Pods Frameworks */ = {
+		7C6AC5E5DA9D6F95BAA8ABB4 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -332,7 +337,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A34C871028EACFCB00AAEA71 /* BreedViewModel.swift in Sources */,
+				A303298728F44418002FE8CF /* Collector.swift in Sources */,
 				A361324A28E70DD800711398 /* BreedListScreen.swift in Sources */,
+				A3E19BF228F432EF00EC73CF /* Koin.swift in Sources */,
 				A361324828E70DD800711398 /* BrownfieldApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

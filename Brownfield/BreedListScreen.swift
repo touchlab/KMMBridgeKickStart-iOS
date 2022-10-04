@@ -7,6 +7,7 @@
 
 import Combine
 import SwiftUI
+import BrownfieldSDK
 
 struct BreedListScreen: View {
     
@@ -18,7 +19,7 @@ struct BreedListScreen: View {
             loading: viewModel.loading,
             breeds: viewModel.breeds,
             error: viewModel.error,
-            onBreedFavorite: { viewModel.onBreedFavorite(breed: $0) },
+            onBreedFavorite: { viewModel.onBreedFavorite($0) },
             refresh: { viewModel.refresh() }
         )
     }
@@ -41,7 +42,7 @@ struct BreedListContent: View {
                         }
                     }
                 }
-                if let error = error {
+                if let error = error, breeds == nil {
                     Text(error)
                         .foregroundColor(.red)
                 }

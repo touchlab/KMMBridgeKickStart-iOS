@@ -9,9 +9,10 @@
 /* Begin PBXAggregateTarget section */
 		F221C887C0CB44EB0F439B918075D672 /* BrownfieldSDK */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 117151BFACBD526EACF73A0DB3F3FE6D /* Build configuration list for PBXAggregateTarget "BrownfieldSDK" */;
+			buildConfigurationList = F9B66D2779DD6D94CDA9344E16775F82 /* Build configuration list for PBXAggregateTarget "BrownfieldSDK" */;
 			buildPhases = (
-				0C8174F92214A28C60972286DDE863BB /* [CP] Copy XCFrameworks */,
+				680EE184766B8A2E1C261B251FAF0037 /* [CP-User] Build BrownfieldSDK */,
+				602D26189403A5E432B3CB7691CEA5C2 /* [CP] Copy dSYMs */,
 			);
 			dependencies = (
 			);
@@ -26,7 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		816132F7DDE7D796A5200AEF26EE8106 /* PBXContainerItemProxy */ = {
+		D3FD2EFEB0993AA269AD4A0033EA5070 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -36,22 +37,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		08E4E8A9CFF9D7FC6D35DFF77DFD11CE /* BrownfieldSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BrownfieldSDK.debug.xcconfig; sourceTree = "<group>"; };
 		0C395C9CB1183ABBA97E68951E9421C2 /* Pods-Brownfield-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Brownfield-acknowledgements.markdown"; sourceTree = "<group>"; };
-		182C3A164F65425065EA5C883A878E15 /* BrownfieldSDK-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "BrownfieldSDK-xcframeworks.sh"; sourceTree = "<group>"; };
+		1C27EC3630150C4240BF8184AC545830 /* BrownfieldSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BrownfieldSDK.framework; path = build/cocoapods/framework/BrownfieldSDK.framework; sourceTree = "<group>"; };
 		2058DFF07BC14B4BAC80469BBEFE5228 /* Pods-Brownfield-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Brownfield-Info.plist"; sourceTree = "<group>"; };
 		39C3CCC3A07D77AFE1F46698D5BD96AA /* Pods-Brownfield.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Brownfield.debug.xcconfig"; sourceTree = "<group>"; };
 		3C454E7B1AEBE99F8945F7F0AE8E3EEA /* Pods-Brownfield */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Brownfield"; path = Pods_Brownfield.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		512171E655DA3A8461D9356C45FEC277 /* Pods-Brownfield.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Brownfield.modulemap"; sourceTree = "<group>"; };
-		5D477502A153480A6F3D1C0C3A596012 /* BrownfieldSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BrownfieldSDK.debug.xcconfig; sourceTree = "<group>"; };
+		5D8852AA3E58F7FEF7B70B12B8A03A79 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		92B1762965A2089BC9FFDFC129EC3E8B /* Pods-Brownfield-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Brownfield-frameworks.sh"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		C43A13E0CD05ED0C56CEBBDB61EABB08 /* BrownfieldSDK.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = BrownfieldSDK.xcframework; sourceTree = "<group>"; };
+		B99115B465ECD54D310D325EF8B90175 /* BrownfieldSDK.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = BrownfieldSDK.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BE3D474A7B447D8A823A42E82437AB2A /* BrownfieldSDK-copy-dsyms.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "BrownfieldSDK-copy-dsyms.sh"; sourceTree = "<group>"; };
 		C63A733DF0A7C052F51F6C2DF04A1937 /* Pods-Brownfield-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Brownfield-umbrella.h"; sourceTree = "<group>"; };
-		D4F3B9BDA4DB82167C9F14D6F2F8BECC /* BrownfieldSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BrownfieldSDK.release.xcconfig; sourceTree = "<group>"; };
 		EB68E5C350A821FCA4D072C9E6B1C199 /* Pods-Brownfield-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Brownfield-acknowledgements.plist"; sourceTree = "<group>"; };
 		F13412F55D7525D36511185A977118B6 /* Pods-Brownfield-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Brownfield-dummy.m"; sourceTree = "<group>"; };
 		F6D71705C5661048F0F6A293D5F523E4 /* Pods-Brownfield.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Brownfield.release.xcconfig"; sourceTree = "<group>"; };
+		FB2B7E6285169CC016DFF2319C7084B9 /* BrownfieldSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BrownfieldSDK.release.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,20 +69,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		11123AC6971A6A8D69141EA413592DEC /* Pods */ = {
+		2FD5A4EBBBC55E7E93EE81FB5B9F221F /* BrownfieldSDK */ = {
 			isa = PBXGroup;
 			children = (
-				DE2A5E3F700DBBDEF67700009B8288F5 /* BrownfieldSDK */,
+				D88EC6FE64E6F69C670DEE9EA9C3161F /* Frameworks */,
+				FADDBCC0F0503319627DC2D6379E44B9 /* Pod */,
+				88510891FFB2A3090BF662F9F0A4B029 /* Support Files */,
 			);
-			name = Pods;
-			sourceTree = "<group>";
+			name = BrownfieldSDK;
+			path = "/Users/julia/Developer/Brownfield-SDK";
+			sourceTree = "<absolute>";
 		};
-		2E7584B308E81F4DE71269918C3E00CC /* Frameworks */ = {
+		518702D018A42BA93640B3FD4B35A3E4 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				C43A13E0CD05ED0C56CEBBDB61EABB08 /* BrownfieldSDK.xcframework */,
+				2FD5A4EBBBC55E7E93EE81FB5B9F221F /* BrownfieldSDK */,
 			);
-			name = Frameworks;
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
@@ -90,15 +96,15 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		B0A781257F783BEE519A31C818971AF8 /* Support Files */ = {
+		88510891FFB2A3090BF662F9F0A4B029 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				182C3A164F65425065EA5C883A878E15 /* BrownfieldSDK-xcframeworks.sh */,
-				5D477502A153480A6F3D1C0C3A596012 /* BrownfieldSDK.debug.xcconfig */,
-				D4F3B9BDA4DB82167C9F14D6F2F8BECC /* BrownfieldSDK.release.xcconfig */,
+				BE3D474A7B447D8A823A42E82437AB2A /* BrownfieldSDK-copy-dsyms.sh */,
+				08E4E8A9CFF9D7FC6D35DFF77DFD11CE /* BrownfieldSDK.debug.xcconfig */,
+				FB2B7E6285169CC016DFF2319C7084B9 /* BrownfieldSDK.release.xcconfig */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/BrownfieldSDK";
+			path = "../Brownfield-iOS/Pods/Target Support Files/BrownfieldSDK";
 			sourceTree = "<group>";
 		};
 		C0E412E90013E3FAB2F3F68FB209DBBF /* Products */ = {
@@ -113,8 +119,8 @@
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				518702D018A42BA93640B3FD4B35A3E4 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				11123AC6971A6A8D69141EA413592DEC /* Pods */,
 				C0E412E90013E3FAB2F3F68FB209DBBF /* Products */,
 				EA16F5A540DFEDD9678FF5002AA1E92C /* Targets Support Files */,
 			);
@@ -145,14 +151,12 @@
 			path = "Target Support Files/Pods-Brownfield";
 			sourceTree = "<group>";
 		};
-		DE2A5E3F700DBBDEF67700009B8288F5 /* BrownfieldSDK */ = {
+		D88EC6FE64E6F69C670DEE9EA9C3161F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2E7584B308E81F4DE71269918C3E00CC /* Frameworks */,
-				B0A781257F783BEE519A31C818971AF8 /* Support Files */,
+				1C27EC3630150C4240BF8184AC545830 /* BrownfieldSDK.framework */,
 			);
-			name = BrownfieldSDK;
-			path = BrownfieldSDK;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		EA16F5A540DFEDD9678FF5002AA1E92C /* Targets Support Files */ = {
@@ -161,6 +165,15 @@
 				D87167CD371691F77A5F82C10226A8F0 /* Pods-Brownfield */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		FADDBCC0F0503319627DC2D6379E44B9 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				B99115B465ECD54D310D325EF8B90175 /* BrownfieldSDK.podspec */,
+				5D8852AA3E58F7FEF7B70B12B8A03A79 /* README.md */,
+			);
+			name = Pod;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,7 +202,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				CFC417C517BDD85883ED072963A53E2E /* PBXTargetDependency */,
+				8032C16CA0FB38A877B4098D251D0978 /* PBXTargetDependency */,
 			);
 			name = "Pods-Brownfield";
 			productName = Pods_Brownfield;
@@ -235,22 +248,32 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0C8174F92214A28C60972286DDE863BB /* [CP] Copy XCFrameworks */ = {
+		602D26189403A5E432B3CB7691CEA5C2 /* [CP] Copy dSYMs */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/BrownfieldSDK/BrownfieldSDK-xcframeworks-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/BrownfieldSDK/BrownfieldSDK-copy-dsyms-input-files.xcfilelist",
 			);
-			name = "[CP] Copy XCFrameworks";
+			name = "[CP] Copy dSYMs";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/BrownfieldSDK/BrownfieldSDK-xcframeworks-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/BrownfieldSDK/BrownfieldSDK-copy-dsyms-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/BrownfieldSDK/BrownfieldSDK-xcframeworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/BrownfieldSDK/BrownfieldSDK-copy-dsyms.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		680EE184766B8A2E1C261B251FAF0037 /* [CP-User] Build BrownfieldSDK */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "[CP-User] Build BrownfieldSDK";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "                if [ \"YES\" = \"$OVERRIDE_KOTLIN_BUILD_IDE_SUPPORTED\" ]; then\n                  echo \"Skipping Gradle build task invocation due to OVERRIDE_KOTLIN_BUILD_IDE_SUPPORTED environment variable set to \"YES\"\"\n                  exit 0\n                fi\n                set -ev\n                REPO_ROOT=\"$PODS_TARGET_SRCROOT\"\n                \"$REPO_ROOT/../../../../private/var/folders/4r/4p1sjpm51yv_hd0pwtlm4xsc0000gn/T/wrap5loc/gradlew\" -p \"$REPO_ROOT\" $KOTLIN_PROJECT_PATH:syncFramework                     -Pkotlin.native.cocoapods.platform=$PLATFORM_NAME                     -Pkotlin.native.cocoapods.archs=\"$ARCHS\"                     -Pkotlin.native.cocoapods.configuration=\"$CONFIGURATION\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -266,33 +289,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		CFC417C517BDD85883ED072963A53E2E /* PBXTargetDependency */ = {
+		8032C16CA0FB38A877B4098D251D0978 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = BrownfieldSDK;
 			target = F221C887C0CB44EB0F439B918075D672 /* BrownfieldSDK */;
-			targetProxy = 816132F7DDE7D796A5200AEF26EE8106 /* PBXContainerItemProxy */;
+			targetProxy = D3FD2EFEB0993AA269AD4A0033EA5070 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		296698517477FED3AE7F6A57DEF09477 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D4F3B9BDA4DB82167C9F14D6F2F8BECC /* BrownfieldSDK.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
 		32E5A6F1EB69FBCB247C2081C34EC7EE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 39C3CCC3A07D77AFE1F46698D5BD96AA /* Pods-Brownfield.debug.xcconfig */;
@@ -327,23 +332,6 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		36592F48B84403FA0683DB3B11BCB77D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5D477502A153480A6F3D1C0C3A596012 /* BrownfieldSDK.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -384,6 +372,23 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		3D4DE3855637FA8BC35F263DBA3853A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08E4E8A9CFF9D7FC6D35DFF77DFD11CE /* BrownfieldSDK.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
 		};
 		A445D08D964FE9C6C05CEE2B0A948973 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -444,6 +449,24 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		C9522947523333720EDC9686851AE5BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB2B7E6285169CC016DFF2319C7084B9 /* BrownfieldSDK.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -516,15 +539,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		117151BFACBD526EACF73A0DB3F3FE6D /* Build configuration list for PBXAggregateTarget "BrownfieldSDK" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				36592F48B84403FA0683DB3B11BCB77D /* Debug */,
-				296698517477FED3AE7F6A57DEF09477 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -539,6 +553,15 @@
 			buildConfigurations = (
 				32E5A6F1EB69FBCB247C2081C34EC7EE /* Debug */,
 				39DF341C08598C4F2CFF761EBCB48164 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9B66D2779DD6D94CDA9344E16775F82 /* Build configuration list for PBXAggregateTarget "BrownfieldSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D4DE3855637FA8BC35F263DBA3853A6 /* Debug */,
+				C9522947523333720EDC9686851AE5BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

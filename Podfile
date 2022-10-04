@@ -11,4 +11,3 @@ target 'Brownfield' do
 end
 
 source 'git@github.com:touchlab/PodSpecs.git'
-source 'https://github.com/CocoaPods/Specs.git'
