@@ -1,0 +1,16 @@
+PODS:
+  - BrownfieldSDK (1.2.1664873633074)
+
+DEPENDENCIES:
+  - BrownfieldSDK (~> 1.0)
+
+SPEC REPOS:
+  "git@github.com:touchlab/PodSpecs.git":
+    - BrownfieldSDK
+
+SPEC CHECKSUMS:
+  BrownfieldSDK: dd475b2c8eb66bcef72fabf4839449047101dba8
+
+PODFILE CHECKSUM: 5756ed4021ed5c646b63a3cfa16810883c943870
+
+COCOAPODS: 1.11.3

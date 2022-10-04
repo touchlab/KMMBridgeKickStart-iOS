@@ -1,0 +1,8 @@
+framework module BrownfieldSDK {
+    umbrella header "BrownfieldSDK.h"
+
+    export *
+    module * { export * }
+
+    use Foundation
+}
