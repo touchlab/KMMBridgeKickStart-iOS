@@ -16,13 +16,9 @@ func startKoin() {
     // iOS-specific code.
 
     let userDefaults = UserDefaults(suiteName: "BROWNFIELD_SETTINGS")!
-    let iosAppInfo = IosAppInfo()
-    let doOnStartup = { NSLog("Hello from iOS/Swift!") }
 
     let koinApplication = KoinIOSKt.doInitKoinIos(
-        userDefaults: userDefaults,
-        appInfo: iosAppInfo,
-        doOnStartup: doOnStartup
+        userDefaults: userDefaults
     )
     _koin = koinApplication.koin
 }
@@ -30,8 +26,4 @@ func startKoin() {
 private var _koin: Koin_coreKoin?
 var koin: Koin_coreKoin {
     return _koin!
-}
-
-class IosAppInfo: AppInfo {
-    let appId: String = Bundle.main.bundleIdentifier!
 }
