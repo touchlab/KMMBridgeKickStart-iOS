@@ -1,0 +1,16 @@
+PODS:
+  - BrownfieldSDK (1.0)
+
+DEPENDENCIES:
+  - BrownfieldSDK (from `/Users/julia/Developer/Brownfield-SDK`)
+
+EXTERNAL SOURCES:
+  BrownfieldSDK:
+    :path: "/Users/julia/Developer/Brownfield-SDK"
+
+SPEC CHECKSUMS:
+  BrownfieldSDK: 474f0f7b0bb86aff7af546b03e557e1e6af1c2d8
+
+PODFILE CHECKSUM: 86bcb3677a97636d050f7ff8258fdffebee0b66e
+
+COCOAPODS: 1.11.3
