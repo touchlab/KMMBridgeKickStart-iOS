@@ -16,7 +16,6 @@
 		A361325A28E70DD900711398 /* BrownfieldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A361325928E70DD900711398 /* BrownfieldTests.swift */; };
 		A361326428E70DD900711398 /* BrownfieldUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A361326328E70DD900711398 /* BrownfieldUITests.swift */; };
 		A361326628E70DD900711398 /* BrownfieldUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A361326528E70DD900711398 /* BrownfieldUITestsLaunchTests.swift */; };
-		A3E19BF228F432EF00EC73CF /* Koin.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E19BF128F432EF00EC73CF /* Koin.swift */; };
 		ED117D43FC90A62A9A445197 /* Pods_Brownfield.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A1D4C206999EBD73D9A736F /* Pods_Brownfield.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,7 +53,6 @@
 		A361325F28E70DD900711398 /* BrownfieldUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrownfieldUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A361326328E70DD900711398 /* BrownfieldUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrownfieldUITests.swift; sourceTree = "<group>"; };
 		A361326528E70DD900711398 /* BrownfieldUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrownfieldUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		A3E19BF128F432EF00EC73CF /* Koin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Koin.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,7 +121,6 @@
 				A361324D28E70DD900711398 /* Brownfield.entitlements */,
 				A361324E28E70DD900711398 /* Preview Content */,
 				A34C870F28EACFCB00AAEA71 /* BreedViewModel.swift */,
-				A3E19BF128F432EF00EC73CF /* Koin.swift */,
 				A303298628F44418002FE8CF /* Collector.swift */,
 			);
 			path = Brownfield;
@@ -173,7 +170,7 @@
 				A361324028E70DD800711398 /* Sources */,
 				A361324128E70DD800711398 /* Frameworks */,
 				A361324228E70DD800711398 /* Resources */,
-				7C6AC5E5DA9D6F95BAA8ABB4 /* [CP] Embed Pods Frameworks */,
+				DCD54905F4E3B48BD00438A2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -312,7 +309,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		7C6AC5E5DA9D6F95BAA8ABB4 /* [CP] Embed Pods Frameworks */ = {
+		DCD54905F4E3B48BD00438A2 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -339,7 +336,6 @@
 				A34C871028EACFCB00AAEA71 /* BreedViewModel.swift in Sources */,
 				A303298728F44418002FE8CF /* Collector.swift in Sources */,
 				A361324A28E70DD800711398 /* BreedListScreen.swift in Sources */,
-				A3E19BF228F432EF00EC73CF /* Koin.swift in Sources */,
 				A361324828E70DD800711398 /* BrownfieldApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

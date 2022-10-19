@@ -1,16 +1,25 @@
 PODS:
-  - BrownfieldSDK (1.0)
+  - allshared (1.0)
+  - SQLite.swift (0.13.3):
+    - SQLite.swift/standard (= 0.13.3)
+  - SQLite.swift/standard (0.13.3)
 
 DEPENDENCIES:
-  - BrownfieldSDK (from `/Users/julia/Developer/Brownfield-SDK`)
+  - allshared (from `/Users/julia/Developer/Brownfield-SDK/allshared`)
+  - SQLite.swift (~> 0.13)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - SQLite.swift
 
 EXTERNAL SOURCES:
-  BrownfieldSDK:
-    :path: "/Users/julia/Developer/Brownfield-SDK"
+  allshared:
+    :path: "/Users/julia/Developer/Brownfield-SDK/allshared"
 
 SPEC CHECKSUMS:
-  BrownfieldSDK: 474f0f7b0bb86aff7af546b03e557e1e6af1c2d8
+  allshared: f77a9fde5a3953d95d83b65c24e1852b2d5d0158
+  SQLite.swift: 903bfa3bc9ab06345fdfbb578e34f47cfcf417da
 
-PODFILE CHECKSUM: 86bcb3677a97636d050f7ff8258fdffebee0b66e
+PODFILE CHECKSUM: 035b41c24d3db397f0a9ec5f3ac245c4560d9406
 
 COCOAPODS: 1.11.3

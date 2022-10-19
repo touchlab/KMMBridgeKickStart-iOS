@@ -6,17 +6,16 @@
 //
 
 import SwiftUI
+import allshared
 
 @main
 struct BrownfieldApp: App {
     
-    init() {
-        startKoin()
-    }
+    private let serviceLocator: ServiceLocator = IOSServiceLocator(userDefaults: UserDefaults.standard)
     
     var body: some Scene {
         WindowGroup {
-            BreedListScreen()
+            BreedListScreen(viewModel: BreedViewModel(repository: serviceLocator.breedRepository))
         }
     }
 }

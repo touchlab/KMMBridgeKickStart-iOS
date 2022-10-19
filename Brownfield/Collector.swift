@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import BrownfieldSDK
+import allshared
 
 class Collector<T>: Kotlinx_coroutines_coreFlowCollector {
 
