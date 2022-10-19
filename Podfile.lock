@@ -17,7 +17,7 @@ EXTERNAL SOURCES:
     :path: "/Users/julia/Developer/Brownfield-SDK/allshared"
 
 SPEC CHECKSUMS:
-  allshared: f77a9fde5a3953d95d83b65c24e1852b2d5d0158
+  allshared: b80291de7ee7fc6a350de5de6fed2aed8f1311a0
   SQLite.swift: 903bfa3bc9ab06345fdfbb578e34f47cfcf417da
 
 PODFILE CHECKSUM: 035b41c24d3db397f0a9ec5f3ac245c4560d9406
