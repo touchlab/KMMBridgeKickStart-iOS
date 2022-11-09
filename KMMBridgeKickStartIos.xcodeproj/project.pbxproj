@@ -10,7 +10,6 @@
 		174BCA85CCEBCCC313F82741 /* Pods_KMMBridgeKickStartIos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3F09800207F1FA0C8B45CDA /* Pods_KMMBridgeKickStartIos.framework */; };
 		A350994529017A1F00822D29 /* BreedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A350993D29017A1E00822D29 /* BreedViewModel.swift */; };
 		A350994629017A1F00822D29 /* KMMBridgeKickStartIosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A350993E29017A1E00822D29 /* KMMBridgeKickStartIosApp.swift */; };
-		A350994729017A1F00822D29 /* Collector.swift in Sources */ = {isa = PBXBuildFile; fileRef = A350993F29017A1E00822D29 /* Collector.swift */; };
 		A350994829017A1F00822D29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A350994029017A1E00822D29 /* Assets.xcassets */; };
 		A350994929017A1F00822D29 /* BreedListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A350994129017A1E00822D29 /* BreedListScreen.swift */; };
 		A350994A29017A1F00822D29 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A350994429017A1F00822D29 /* Preview Assets.xcassets */; };
@@ -40,7 +39,6 @@
 		9616F57AB3AF5EAA1F67D59D /* Pods-KMMBridgeKickStartIos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KMMBridgeKickStartIos.release.xcconfig"; path = "Target Support Files/Pods-KMMBridgeKickStartIos/Pods-KMMBridgeKickStartIos.release.xcconfig"; sourceTree = "<group>"; };
 		A350993D29017A1E00822D29 /* BreedViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BreedViewModel.swift; sourceTree = "<group>"; };
 		A350993E29017A1E00822D29 /* KMMBridgeKickStartIosApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KMMBridgeKickStartIosApp.swift; sourceTree = "<group>"; };
-		A350993F29017A1E00822D29 /* Collector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Collector.swift; sourceTree = "<group>"; };
 		A350994029017A1E00822D29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A350994129017A1E00822D29 /* BreedListScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BreedListScreen.swift; sourceTree = "<group>"; };
 		A350994229017A1E00822D29 /* KMMBridgeKickStartIos.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = KMMBridgeKickStartIos.entitlements; sourceTree = "<group>"; };
@@ -95,7 +93,6 @@
 			children = (
 				A350993D29017A1E00822D29 /* BreedViewModel.swift */,
 				A350993E29017A1E00822D29 /* KMMBridgeKickStartIosApp.swift */,
-				A350993F29017A1E00822D29 /* Collector.swift */,
 				A350994029017A1E00822D29 /* Assets.xcassets */,
 				A350994129017A1E00822D29 /* BreedListScreen.swift */,
 				A350994229017A1E00822D29 /* KMMBridgeKickStartIos.entitlements */,
@@ -318,7 +315,6 @@
 				A350994529017A1F00822D29 /* BreedViewModel.swift in Sources */,
 				A350994629017A1F00822D29 /* KMMBridgeKickStartIosApp.swift in Sources */,
 				A350994929017A1F00822D29 /* BreedListScreen.swift in Sources */,
-				A350994729017A1F00822D29 /* Collector.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

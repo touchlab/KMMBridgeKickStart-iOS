@@ -9,9 +9,9 @@
 /* Begin PBXAggregateTarget section */
 		5F9C8055BABC90760585243C59C1A9BD /* allshared */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = A7BB5FB80AACD44797E49A4570F98948 /* Build configuration list for PBXAggregateTarget "allshared" */;
+			buildConfigurationList = 79EA84DB5163242474A4C10BFEC1007E /* Build configuration list for PBXAggregateTarget "allshared" */;
 			buildPhases = (
-				350083A673BDF4E238439129BBE50D61 /* [CP-User] Build allshared */,
+				15625E92CDF558C991FEB0D409B350E6 /* [CP-User] Build allshared */,
 			);
 			dependencies = (
 			);
@@ -26,7 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		32B3865DF06E70DBB821C7C4331E506A /* PBXContainerItemProxy */ = {
+		F0640AE22FA745B0575D532FE26174B6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -36,8 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1CDEEC8FBB5C9D1F5018D9C3FEB7C05B /* allshared.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = allshared.debug.xcconfig; sourceTree = "<group>"; };
-		4AD7F4254C6D1F044CBE9B06B0C1ABB1 /* allshared.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = allshared.release.xcconfig; sourceTree = "<group>"; };
+		208C9C2247638D9BD3F854723354233B /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE.txt; sourceTree = "<group>"; };
 		5796A29740DE5CE9AC09C5B3662FCA2F /* Pods-KMMBridgeKickStartIos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KMMBridgeKickStartIos.release.xcconfig"; sourceTree = "<group>"; };
 		628B34ACEBAFED7B11ADA8CF27656D5D /* Pods-KMMBridgeKickStartIos-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KMMBridgeKickStartIos-acknowledgements.markdown"; sourceTree = "<group>"; };
 		665A2C12F906873B48FE32B79FC641A3 /* Pods-KMMBridgeKickStartIos-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KMMBridgeKickStartIos-dummy.m"; sourceTree = "<group>"; };
@@ -46,11 +45,13 @@
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		747C9D3531862BF63B55FD749AC5FB7D /* Pods-KMMBridgeKickStartIos-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KMMBridgeKickStartIos-umbrella.h"; sourceTree = "<group>"; };
 		74C4010AA4FB4230FE99F04857213AC8 /* Pods-KMMBridgeKickStartIos.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-KMMBridgeKickStartIos.modulemap"; sourceTree = "<group>"; };
-		7CE2AAF353F28D003774B90695CAE4D0 /* allshared.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = allshared.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		80F7BD22891E8E214B04140E42D77F94 /* Pods-KMMBridgeKickStartIos-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KMMBridgeKickStartIos-acknowledgements.plist"; sourceTree = "<group>"; };
 		8304173A5ACF6CFFC487ED42AE89F481 /* Pods-KMMBridgeKickStartIos */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-KMMBridgeKickStartIos"; path = Pods_KMMBridgeKickStartIos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9A72FE3240AE7A8DBAFB6531B3417412 /* allshared.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = allshared.framework; path = build/cocoapods/framework/allshared.framework; sourceTree = "<group>"; };
+		8AFE48EA7834E24FF7145762ABE97876 /* allshared.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = allshared.debug.xcconfig; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		AEEBE7CEE106FEEA8A40C491D4460C15 /* allshared.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = allshared.framework; path = build/cocoapods/framework/allshared.framework; sourceTree = "<group>"; };
+		C9C44B66B4001F70D61FB8095238710B /* allshared.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = allshared.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		F08B5803AD2ABDA1457E0BF582A58AB1 /* allshared.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = allshared.release.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,14 +66,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0C8875DB5E814EF02CF743BF8C829B37 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				7CE2AAF353F28D003774B90695CAE4D0 /* allshared.podspec */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
 		169B70B12967CD26C5D856AD1D571CF8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -81,10 +74,29 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3A5958C58A3EFAF0E83DF523BB30ABC9 /* Frameworks */ = {
+		333F0A3DA53B871A6066145B8CF1827E /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				9A72FE3240AE7A8DBAFB6531B3417412 /* allshared.framework */,
+				8AFE48EA7834E24FF7145762ABE97876 /* allshared.debug.xcconfig */,
+				F08B5803AD2ABDA1457E0BF582A58AB1 /* allshared.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../../KMMBridgeKickStart-iOS/Pods/Target Support Files/allshared";
+			sourceTree = "<group>";
+		};
+		3F429776BDFB2D95AFEFE69844EFF99F /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				C9C44B66B4001F70D61FB8095238710B /* allshared.podspec */,
+				208C9C2247638D9BD3F854723354233B /* LICENSE.txt */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		5564EF45CF48B7F86A6E9014AE3C948A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AEEBE7CEE106FEEA8A40C491D4460C15 /* allshared.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -96,17 +108,6 @@
 			);
 			name = iOS;
 			sourceTree = "<group>";
-		};
-		5D37B94C81D2A5479CCBF79C4E6B12DF /* allshared */ = {
-			isa = PBXGroup;
-			children = (
-				3A5958C58A3EFAF0E83DF523BB30ABC9 /* Frameworks */,
-				0C8875DB5E814EF02CF743BF8C829B37 /* Pod */,
-				FCA94A21679D066EE66617358E821C47 /* Support Files */,
-			);
-			name = allshared;
-			path = /Users/julia/Developer/KMMBridgeKickStart/allshared;
-			sourceTree = "<absolute>";
 		};
 		83C8C1594F1DF2CEFD43F4CD3FFCE313 /* Pods-KMMBridgeKickStartIos */ = {
 			isa = PBXGroup;
@@ -151,22 +152,23 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		EBCB3C902944D29E113D2BD357104441 /* allshared */ = {
+			isa = PBXGroup;
+			children = (
+				5564EF45CF48B7F86A6E9014AE3C948A /* Frameworks */,
+				3F429776BDFB2D95AFEFE69844EFF99F /* Pod */,
+				333F0A3DA53B871A6066145B8CF1827E /* Support Files */,
+			);
+			name = allshared;
+			path = /Users/julia/Developer/KMMBridgeKickStart/allshared;
+			sourceTree = "<absolute>";
+		};
 		F650211C187BB86454D807E695052857 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				5D37B94C81D2A5479CCBF79C4E6B12DF /* allshared */,
+				EBCB3C902944D29E113D2BD357104441 /* allshared */,
 			);
 			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		FCA94A21679D066EE66617358E821C47 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				1CDEEC8FBB5C9D1F5018D9C3FEB7C05B /* allshared.debug.xcconfig */,
-				4AD7F4254C6D1F044CBE9B06B0C1ABB1 /* allshared.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../../KMMBridgeKickStart-iOS/Pods/Target Support Files/allshared";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,7 +197,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				8B47A882159822981964B48E6C5D36DB /* PBXTargetDependency */,
+				CC56309C43AB92AFDEC85F6A5FB3DEFB /* PBXTargetDependency */,
 			);
 			name = "Pods-KMMBridgeKickStartIos";
 			productName = Pods_KMMBridgeKickStartIos;
@@ -241,7 +243,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		350083A673BDF4E238439129BBE50D61 /* [CP-User] Build allshared */ = {
+		15625E92CDF558C991FEB0D409B350E6 /* [CP-User] Build allshared */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -249,7 +251,7 @@
 			name = "[CP-User] Build allshared";
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "                if [ \"YES\" = \"$OVERRIDE_KOTLIN_BUILD_IDE_SUPPORTED\" ]; then\n                  echo \"Skipping Gradle build task invocation due to OVERRIDE_KOTLIN_BUILD_IDE_SUPPORTED environment variable set to \"YES\"\"\n                  exit 0\n                fi\n                set -ev\n                REPO_ROOT=\"$PODS_TARGET_SRCROOT\"\n                \"$REPO_ROOT/../../../../../private/var/folders/4r/4p1sjpm51yv_hd0pwtlm4xsc0000gn/T/wraploc/gradlew\" -p \"$REPO_ROOT\" $KOTLIN_PROJECT_PATH:syncFramework                     -Pkotlin.native.cocoapods.platform=$PLATFORM_NAME                     -Pkotlin.native.cocoapods.archs=\"$ARCHS\"                     -Pkotlin.native.cocoapods.configuration=\"$CONFIGURATION\"\n";
+			shellScript = "                if [ \"YES\" = \"$OVERRIDE_KOTLIN_BUILD_IDE_SUPPORTED\" ]; then\n                  echo \"Skipping Gradle build task invocation due to OVERRIDE_KOTLIN_BUILD_IDE_SUPPORTED environment variable set to \"YES\"\"\n                  exit 0\n                fi\n                set -ev\n                REPO_ROOT=\"$PODS_TARGET_SRCROOT\"\n                \"$REPO_ROOT/../gradlew\" -p \"$REPO_ROOT\" $KOTLIN_PROJECT_PATH:syncFramework                     -Pkotlin.native.cocoapods.platform=$PLATFORM_NAME                     -Pkotlin.native.cocoapods.archs=\"$ARCHS\"                     -Pkotlin.native.cocoapods.configuration=\"$CONFIGURATION\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -265,15 +267,33 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		8B47A882159822981964B48E6C5D36DB /* PBXTargetDependency */ = {
+		CC56309C43AB92AFDEC85F6A5FB3DEFB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = allshared;
 			target = 5F9C8055BABC90760585243C59C1A9BD /* allshared */;
-			targetProxy = 32B3865DF06E70DBB821C7C4331E506A /* PBXContainerItemProxy */;
+			targetProxy = F0640AE22FA745B0575D532FE26174B6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		34EC329E02B20C2988BC97BEDB7CD76F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F08B5803AD2ABDA1457E0BF582A58AB1 /* allshared.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		7F7249F8589B8A23991FBE3FF05DE941 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7214FD601633BBAFD58CA04A01DECB72 /* Pods-KMMBridgeKickStartIos.debug.xcconfig */;
@@ -411,41 +431,6 @@
 			};
 			name = Release;
 		};
-		CD6AB9EFC9E561644D860864BC47621E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4AD7F4254C6D1F044CBE9B06B0C1ABB1 /* allshared.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		D6D1AE18F02CC4A0D77BBB61257CE36F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1CDEEC8FBB5C9D1F5018D9C3FEB7C05B /* allshared.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
 		EB7376794D773187B6D048F04E70CE39 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -512,6 +497,23 @@
 			};
 			name = Debug;
 		};
+		F0EBEE75079C923E223C9737B0B4476C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8AFE48EA7834E24FF7145762ABE97876 /* allshared.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -524,11 +526,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A7BB5FB80AACD44797E49A4570F98948 /* Build configuration list for PBXAggregateTarget "allshared" */ = {
+		79EA84DB5163242474A4C10BFEC1007E /* Build configuration list for PBXAggregateTarget "allshared" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D6D1AE18F02CC4A0D77BBB61257CE36F /* Debug */,
-				CD6AB9EFC9E561644D860864BC47621E /* Release */,
+				F0EBEE75079C923E223C9737B0B4476C /* Debug */,
+				34EC329E02B20C2988BC97BEDB7CD76F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

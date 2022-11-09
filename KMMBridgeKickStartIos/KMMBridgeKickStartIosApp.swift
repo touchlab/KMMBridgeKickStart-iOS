@@ -11,16 +11,16 @@ import allshared
 @main
 struct KMMBridgeKickStartIosApp: App {
     
-    private let serviceLocator: ServiceLocator = IOSServiceLocator(userDefaults: UserDefaults.standard)
+    private let handle: SDKHandle
     
     init() {
-        AnalyticsKt.doInitAnalytics(analytics: IosAnalytics())
+        self.handle = StartSDKKt.startSDK(analytics: IosAnalytics())
         AppAnalytics().appStarted()
     }
     
     var body: some Scene {
         WindowGroup {
-            BreedListScreen(viewModel: BreedViewModel(repository: serviceLocator.breedRepository))
+            BreedListScreen(viewModel: BreedViewModel(repository: handle.breedRepository))
         }
     }
 }

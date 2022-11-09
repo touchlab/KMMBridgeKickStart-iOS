@@ -12,53 +12,40 @@ import allshared
 @MainActor
 class BreedViewModel : ObservableObject {
     
-    private let repository: BreedRepository
+    private let repository: BreedsCallbackBreedRepository
     
     @Published
     var loading = false
     
     @Published
-    var breeds: [Breed]?
+    var breeds: [BreedsBreed]?
     
     @Published
     var error: String?
     
     private var cancellables = [AnyCancellable]()
     
-    init(repository: BreedRepository) {
+    init(repository: BreedsCallbackBreedRepository) {
         self.repository = repository
         observeBreeds()
+        repository.refreshBreedsIfStale()
     }
     
     private func observeBreeds() {
-        repository.getBreeds().collect(collector: Collector<NSArray?>(callback: { breeds in
+        repository.getBreeds(callback: { breeds in
             DispatchQueue.main.async {
-                self.breeds = breeds as? [Breed]
+                self.breeds = breeds
+                self.loading = false
             }
-        }), completionHandler: { error in
-            self.handleError(error: error)
         })
     }
     
-    func onBreedFavorite(_ breed: Breed) {
-        repository.updateBreedFavorite(breed: breed, completionHandler: { error in
-            self.handleError(error: error)
-        })
+    func onBreedFavorite(_ breed: BreedsBreed) {
+        repository.updateBreedFavorite(breed: breed)
     }
     
     func refresh() {
         loading = true
-        repository.refreshBreeds(completionHandler: { error in
-            self.handleError(error: error)
-        })
-    }
-    
-    private func handleError(error: Error?) {
-        DispatchQueue.main.async {
-            self.loading = false
-            if error != nil {
-                self.error = "Unable to refresh breed list"
-            }
-        }
+        repository.refreshBreeds()
     }
 }
