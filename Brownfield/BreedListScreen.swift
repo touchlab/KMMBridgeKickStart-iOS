@@ -7,12 +7,12 @@
 
 import Combine
 import SwiftUI
-import BrownfieldSDK
+import allshared
 
 struct BreedListScreen: View {
     
-    @StateObject
-    var viewModel = BreedViewModel()
+    @ObservedObject
+    var viewModel: BreedViewModel
 
     var body: some View {
         BreedListContent(

@@ -1,2 +1,3 @@
 ${PODS_ROOT}/Target Support Files/Pods-Brownfield/Pods-Brownfield-frameworks.sh
-${PODS_ROOT}/../../Brownfield-SDK/build/cocoapods/framework/BrownfieldSDK.framework
+${BUILT_PRODUCTS_DIR}/SQLite.swift/SQLite.framework
+${PODS_ROOT}/../../Brownfield-SDK/allshared/build/cocoapods/framework/allshared.framework

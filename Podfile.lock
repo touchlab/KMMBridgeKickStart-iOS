@@ -1,16 +1,16 @@
 PODS:
-  - BrownfieldSDK (1.0)
+  - allshared (1.0)
 
 DEPENDENCIES:
-  - BrownfieldSDK (from `/Users/julia/Developer/Brownfield-SDK`)
+  - allshared (from `/Users/julia/Developer/Brownfield-SDK/allshared`)
 
 EXTERNAL SOURCES:
-  BrownfieldSDK:
-    :path: "/Users/julia/Developer/Brownfield-SDK"
+  allshared:
+    :path: "/Users/julia/Developer/Brownfield-SDK/allshared"
 
 SPEC CHECKSUMS:
-  BrownfieldSDK: 474f0f7b0bb86aff7af546b03e557e1e6af1c2d8
+  allshared: da42527b5f662829d1ee9d55293aafdbd9a0b103
 
-PODFILE CHECKSUM: 86bcb3677a97636d050f7ff8258fdffebee0b66e
+PODFILE CHECKSUM: 0e598afbaec55c193216ec439d0b0b6880bcc30b
 
 COCOAPODS: 1.11.3
