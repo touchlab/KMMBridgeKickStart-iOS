@@ -1,13 +1,13 @@
 //
-//  BrownfieldUITests.swift
-//  BrownfieldUITests
+//  KMMBridgeKickStartIosUITests.swift
+//  KMMBridgeKickStartIosUITests
 //
 //  Created by Júlia Jakubcová on 30/09/2022.
 //
 
 import XCTest
 
-final class BrownfieldUITests: XCTestCase {
+final class KMMBridgeKickStartIosUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

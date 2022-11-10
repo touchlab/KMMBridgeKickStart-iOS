@@ -1,6 +1,6 @@
 //
 //  BreedViewModel.swift
-//  Brownfield
+//  KMMBridgeKickStartIos
 //
 //  Created by Júlia Jakubcová on 03/10/2022.
 //

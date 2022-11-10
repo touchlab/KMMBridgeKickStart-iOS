@@ -1,13 +1,13 @@
 //
-//  BrownfieldUITestsLaunchTests.swift
-//  BrownfieldUITests
+//  KMMBridgeKickStartIosUITestsLaunchTests.swift
+//  KMMBridgeKickStartIosUITests
 //
 //  Created by Júlia Jakubcová on 30/09/2022.
 //
 
 import XCTest
 
-final class BrownfieldUITestsLaunchTests: XCTestCase {
+final class KMMBridgeKickStartIosUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true

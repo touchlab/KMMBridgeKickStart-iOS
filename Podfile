@@ -2,11 +2,11 @@ use_frameworks!
 
 platform :ios, '13.5'
 
-target 'Brownfield' do
+target 'KMMBridgeKickStartIos' do
   if ENV.include?("LOCAL_KOTLIN_PATH")
     pod 'allshared', :path => ENV["LOCAL_KOTLIN_PATH"]
   else
-    pod 'allshared', '~> 1.0'
+    pod 'allshared', '~> 0.2'
   end
 end
 

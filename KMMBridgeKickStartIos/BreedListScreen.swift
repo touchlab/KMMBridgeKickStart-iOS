@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  Brownfield
+//  KMMBridgeKickStartIos
 //
 //  Created by Júlia Jakubcová on 30/09/2022.
 //

@@ -1,6 +1,6 @@
 //
-//  BrownfieldApp.swift
-//  Brownfield
+//  KMMBridgeKickStartIosApp.swift
+//  KMMBridgeKickStartIos
 //
 //  Created by Júlia Jakubcová on 30/09/2022.
 //
@@ -9,7 +9,7 @@ import SwiftUI
 import allshared
 
 @main
-struct BrownfieldApp: App {
+struct KMMBridgeKickStartIosApp: App {
     
     private let serviceLocator: ServiceLocator = IOSServiceLocator(userDefaults: UserDefaults.standard)
     
