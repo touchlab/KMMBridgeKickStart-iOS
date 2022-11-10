@@ -18,7 +18,10 @@ class BreedViewModel : ObservableObject {
     var loading = false
     
     @Published
-    var breeds: [BreedsBreed]?
+    private var breedModels: [BreedsBreed]?
+    
+    @Published
+    var breeds: [Breed]?
     
     @Published
     var error: String?
@@ -34,14 +37,19 @@ class BreedViewModel : ObservableObject {
     private func observeBreeds() {
         repository.getBreeds(callback: { breeds in
             DispatchQueue.main.async {
-                self.breeds = breeds
+                self.breedModels = breeds
+                self.breeds = breeds.map { Breed(breed: $0) }
                 self.loading = false
             }
         })
     }
     
-    func onBreedFavorite(_ breed: BreedsBreed) {
-        repository.updateBreedFavorite(breed: breed)
+    func onBreedFavorite(_ breed: Breed) {
+        if let breedModel = breedModels?.first(where: { $0.id == breed.id }) {
+            repository.updateBreedFavorite(breed: breedModel)
+        } else {
+            fatalError("Breed \(breed) not found.")
+        }
     }
     
     func refresh() {
