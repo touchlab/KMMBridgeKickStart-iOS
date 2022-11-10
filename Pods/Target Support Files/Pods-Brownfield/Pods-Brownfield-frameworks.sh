@@ -177,11 +177,9 @@ code_sign_if_enabled() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/SQLite.swift/SQLite.framework"
-  install_framework "${PODS_ROOT}/../../Brownfield-SDK/allshared/build/cocoapods/framework/allshared.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/SQLite.swift/SQLite.framework"
-  install_framework "${PODS_ROOT}/../../Brownfield-SDK/allshared/build/cocoapods/framework/allshared.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

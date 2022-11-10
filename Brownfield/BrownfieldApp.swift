@@ -13,9 +13,21 @@ struct BrownfieldApp: App {
     
     private let serviceLocator: ServiceLocator = IOSServiceLocator(userDefaults: UserDefaults.standard)
     
+    init() {
+        AnalyticsKt.doInitAnalytics(analytics: IosAnalytics())
+        AppAnalytics().appStarted()
+    }
+    
     var body: some Scene {
         WindowGroup {
             BreedListScreen(viewModel: BreedViewModel(repository: serviceLocator.breedRepository))
         }
+    }
+}
+
+class IosAnalytics: Analytics {
+    func sendEvent(eventName: String, eventArgs: [String : Any]) {
+        // In a real app, you would call to your analytics backend here
+        print("\(eventName) - \(eventArgs)")
     }
 }

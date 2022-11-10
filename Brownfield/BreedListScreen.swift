@@ -39,12 +39,18 @@ struct BreedListContent: View {
                     List(breeds, id: \.id) { breed in
                         BreedRowView(breed: breed) {
                             onBreedFavorite(breed)
+                            BreedAnalytics().favoriteClicked(id: breed.id)
                         }
+                    }.onAppear {
+                        BreedAnalytics().displayingBreeds(size: Int32(breeds.count))
                     }
                 }
                 if let error = error, breeds == nil {
                     Text(error)
                         .foregroundColor(.red)
+                        .onAppear {
+                            BreedAnalytics().displayingError(message: error)
+                        }
                 }
                 Button("Refresh") {
                     refresh()
