@@ -13,9 +13,12 @@ struct BreedListScreen: View {
     
     @ObservedObject
     var viewModel: BreedViewModel
+    
+    let breedAnalytics: BreedAnalytics
 
     var body: some View {
         BreedListContent(
+            breedAnalytics: breedAnalytics,
             loading: viewModel.loading,
             breeds: viewModel.breeds,
             error: viewModel.error,
@@ -26,6 +29,8 @@ struct BreedListScreen: View {
 }
 
 struct BreedListContent: View {
+    
+    let breedAnalytics: BreedAnalytics
     var loading: Bool
     var breeds: [Breed]?
     var error: String?
@@ -39,17 +44,17 @@ struct BreedListContent: View {
                     List(breeds, id: \.id) { breed in
                         BreedRowView(breed: breed) {
                             onBreedFavorite(breed)
-                            BreedAnalytics().favoriteClicked(id: breed.id)
+                            breedAnalytics.favoriteClicked(id: breed.id)
                         }
                     }.onAppear {
-                        BreedAnalytics().displayingBreeds(size: Int32(breeds.count))
+                        breedAnalytics.displayingBreeds(size: Int32(breeds.count))
                     }
                 }
                 if let error = error, breeds == nil {
                     Text(error)
                         .foregroundColor(.red)
                         .onAppear {
-                            BreedAnalytics().displayingError(message: error)
+                            breedAnalytics.displayingError(message: error)
                         }
                 }
                 Button("Refresh") {
@@ -77,19 +82,3 @@ struct BreedRowView: View {
         }
     }
 }
-
-struct BreedListScreen_Previews: PreviewProvider {
-    static var previews: some View {
-        BreedListContent(
-            loading: false,
-            breeds: [
-                Breed(id: 0, name: "appenzeller", favorite: false),
-                Breed(id: 1, name: "australian", favorite: true)
-            ],
-            error: nil,
-            onBreedFavorite: { _ in },
-            refresh: {}
-        )
-    }
-}
-

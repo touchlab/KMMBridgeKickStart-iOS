@@ -15,12 +15,15 @@ struct KMMBridgeKickStartIosApp: App {
     
     init() {
         self.handle = StartSDKKt.startSDK(analytics: IosAnalytics())
-        AppAnalytics().appStarted()
+        handle.appAnalytics.appStarted()
     }
     
     var body: some Scene {
         WindowGroup {
-            BreedListScreen(viewModel: BreedViewModel(repository: handle.breedRepository))
+            BreedListScreen(
+                viewModel: BreedViewModel(repository: handle.breedRepository, breedAnalytics: handle.breedAnalytics),
+                breedAnalytics: handle.breedAnalytics
+            )
         }
     }
 }
