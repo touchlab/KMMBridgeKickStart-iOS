@@ -13,6 +13,7 @@ import allshared
 class BreedViewModel : ObservableObject {
     
     private let repository: BreedsCallbackBreedRepository
+    private let breedAnalytics: BreedAnalytics
     
     @Published
     var loading = false
@@ -28,8 +29,9 @@ class BreedViewModel : ObservableObject {
     
     private var cancellables = [AnyCancellable]()
     
-    init(repository: BreedsCallbackBreedRepository) {
+    init(repository: BreedsCallbackBreedRepository, breedAnalytics: BreedAnalytics) {
         self.repository = repository
+        self.breedAnalytics = breedAnalytics
         observeBreeds()
         repository.refreshBreedsIfStale()
     }
@@ -54,6 +56,7 @@ class BreedViewModel : ObservableObject {
     
     func refresh() {
         loading = true
+        breedAnalytics.refreshingBreeds()
         repository.refreshBreeds()
     }
 }
