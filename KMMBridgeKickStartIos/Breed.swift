@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import allshared
+import KMMBridgeKickStart
 
 class Breed {
     

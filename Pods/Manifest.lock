@@ -1,16 +1,16 @@
 PODS:
-  - allshared (0.1)
+  - KMMBridge-KickStart (0.1)
 
 DEPENDENCIES:
-  - allshared (from `/Users/julia/Developer/KMMBridgeKickStart/allshared`)
+  - KMMBridge-KickStart (from `/Users/julia/Developer/KMMBridgeKickStart/allshared`)
 
 EXTERNAL SOURCES:
-  allshared:
+  KMMBridge-KickStart:
     :path: "/Users/julia/Developer/KMMBridgeKickStart/allshared"
 
 SPEC CHECKSUMS:
-  allshared: 249cacb6dffb4ebfd7ac8a5d0c28985bd176fc5e
+  KMMBridge-KickStart: 4b346631c0f1b6b31ec3fbc6ad005001a6ffd416
 
-PODFILE CHECKSUM: 52de2ff0ee4b75f09a8fb780b961192096aefdaa
+PODFILE CHECKSUM: 23c77f2f57dc683d7b26756c4c9225355eb6abb2
 
 COCOAPODS: 1.11.3
