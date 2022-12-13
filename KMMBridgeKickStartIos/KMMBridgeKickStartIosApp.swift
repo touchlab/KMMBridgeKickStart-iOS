@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import allshared
+import KMMBridgeKickStart
 
 @main
 struct KMMBridgeKickStartIosApp: App {

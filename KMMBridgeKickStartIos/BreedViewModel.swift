@@ -7,7 +7,7 @@
 
 import Foundation
 import Combine
-import allshared
+import KMMBridgeKickStart
     
 @MainActor
 class BreedViewModel : ObservableObject {

@@ -7,7 +7,7 @@
 
 import Combine
 import SwiftUI
-import allshared
+import KMMBridgeKickStart
 
 struct BreedListScreen: View {
     
